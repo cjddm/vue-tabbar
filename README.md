@@ -1,19 +1,17 @@
-# 06-demo-02
+### 用vue封装的一个tabbar组件
 
-## Project setup
-```
-npm install
-```
+src > components > tabbar > MainTabbar
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
+```vue
+<TabBaritem path="/home" activeColor="">
+      <img slot="item-icon" src="" alt />
+      <img slot="item-icon-active" src="" alt />
+      <div slot="item-text">首页</div>
+ </TabBaritem>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+activeColor  是tabbar文字的颜色，默认为red
+
+slot="item-icon"  是正常状态下的图片
+
+slot="item-icon-active"  是被选中状态下的图片
